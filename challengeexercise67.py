@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""This is to practice reading and writing from files"""
 def main():
     input_filename = "dracula.txt"
     output_filename = "vampytimes.txt"
