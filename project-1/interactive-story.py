@@ -13,13 +13,13 @@ def main():
         user_choice = input("Please choose a path? (L/C/R) ")
 
         if user_choice.lower() == "l":
-            choose_left_path() #key choice
+            choose_left_path() 
             break
         elif user_choice.lower() == "c":
-            choose_middle_path() #dog choice
+            choose_middle_path() 
             break
         elif user_choice.lower() == "r":
-            choose_right_path() #game over
+            choose_right_path() 
             break
         else:
             print("Invalid choice. Please enter 'L', 'C', or 'R'.")
