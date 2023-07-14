@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""RZFeeser | Alta3 Research
-   Player - Class model
-   Cheat_Swapper(Player) - Subclass model
-   Cheat_Loaded_Dice(Player) - Subclass model"""
 
 # standard library
 from random import randint
@@ -32,4 +28,18 @@ class Cheat_Loaded_Dice(Player): # inheritance of Player
             if self.dice[i] < 6:
                 self.dice[i] += 1
             i += 1
+
+# allows user to reroll if sum total is less than 9.
+class Mull_Cheater(Player):
+    def cheat(self):
+        if sum(self.dice) < 9:
+            self.roll()
+
+# prevent user from rolling less than a 3 on any die.
+class Weighted_Dice_Cheater(Player):
+    def roll(self):
+        self.dice = []
+        for _ in range(3):
+            self.dice.append(randint(3, 6))  # Rolls between 3 and 6 inclusive
+
 
