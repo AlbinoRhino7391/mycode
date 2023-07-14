@@ -37,7 +37,7 @@ class Mull_Cheater(Player):
 
 # prevent user from rolling less than a 3 on any die.
 class Weighted_Dice_Cheater(Player):
-    def roll(self):
+    def cheat(self):
         self.dice = []
         for _ in range(3):
             self.dice.append(randint(3, 6))  # Rolls between 3 and 6 inclusive
