@@ -28,7 +28,7 @@ def main():
     cheater1.cheat()
     cheater2.cheat()
     cheater3.cheat()
-    cheater4.chear()
+    cheater4.cheat()
 
     print(f"Cheater 1 rolled {cheater1.get_dice()}")
     print(f"Cheater 2 rolled {cheater2.get_dice()}")
