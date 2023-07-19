@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python4
 """ Interactive story for lab 48/project1 """
 
 def main():
+    # Welcome message and story setup
     print("Welcome to My Interactive Fiction Game!")
     print("Can you Escape!!!")
     print("You wake up in a daze...")
@@ -10,6 +11,7 @@ def main():
     print("Which path do you choose: (L)eft, (C)enter, (R)ight")
 
     while True:
+        #while loop to give the first chance for the story to branch off
         user_choice = input("Please choose a path? (L/C/R) ")
 
         if user_choice.lower() == "l":
@@ -25,11 +27,13 @@ def main():
             print("Invalid choice. Please enter 'L', 'C', or 'R'.")
 
 def choose_left_path():
+    #first branch off, if the user chose the left path
     print("You have chosen to take the path on the left.")
     print("While walking this path, You see faint shine from a pile of rubble.")
     print("Instictively you go to investigate, and you find a key buried amongst the rubble.")
     
     while True:
+        #while loop to initiate branch off 2
         print("What would you like to do?")
         key_choice = input("1. Take the key\n2. Leave it\n> ")
 
@@ -49,6 +53,7 @@ def choose_left_path():
             print("Invalid choice. Please enter either '1' or '2'.")
 
 def left_key_behind():
+    #continuation of branch 2 leading into final branch
     print("While continuing onward, you find a ladder and a door.")
 
     while True:
@@ -74,10 +79,12 @@ def left_key_behind():
             print("Invalid choice. Please enter either '1' or '2'.")
 
 def choose_middle_path():
+    #branch off 1 if user chose the middle path.
     print("You start walking down the middle path.")
     print("After walking for what seemed to be hours, youre greeted by a dog.")
     
     while True:
+        #while loop to add branch off 2
         print("What do you want to do?")
         pet_choice = input("1. Pet the dog\n2. Ignore the dog\n> ")
 
@@ -97,10 +104,12 @@ def choose_middle_path():
             print("Invalid choice. Please enter either '1' or '2'.")
 
 def pet_doggo():
+    #branch off 2 from the middle path
     print("The dog suddenly takes off running.")
     print("Should you follow the dog or let it run off?")
 
     while True:
+        #while loop to lead into final branch off 50/50
         print("Which one do you choose?")
         door_choice = input("1. Follow\n2. Stay> ")
 
@@ -122,6 +131,7 @@ def pet_doggo():
             print("Invalid choice. Please enter either '1' or '2'.")
 
 def choose_right_path():
+    #branch off 1 that leads to game over
     print("You start to walk down the path laid on the right.")
     print("After a short while, you step on a rock, that seems to sink.")
     print("Spears drop from the ceiling and impale you.")
@@ -129,6 +139,7 @@ def choose_right_path():
     game_over()
 
 def game_over():
+    #game over function that gives the user the ability to play again.
     while True:
         play_again = input("Would you like to play again? (Y/N) ")
 
