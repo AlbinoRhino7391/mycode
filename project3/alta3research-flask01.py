@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
 
+"""
+This is a simple Flask API script that demonstrates creating a basic RESTful API.
+
+The API has two endpoints:
+1. '/json-data': This endpoint returns JSON data, representing a list of people with their names and ages.
+2. '/protected-data': This endpoint requires a session value (authentication) to access and returns a message.
+
+The API is hosted on 'http://localhost:5000/' (your local machine). since this is a proof of concept lab.
+
+To test this script, you can use the 'alta3research-requests02.py' script to send requests to this API.
+
+Prerequisites:
+- Python 3 and Flask library installed.
+"""
+
 from flask import Flask, jsonify, request, session
 
 app = Flask(__name__)
