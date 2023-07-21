@@ -21,9 +21,9 @@ app = Flask(__name__)
 
 # Sample data in a list of dictionaries
 data = [
-    {'name': 'Alice', 'age': 25},
-    {'name': 'Bob', 'age': 30},
-    {'name': 'Charlie', 'age': 22}
+    {'name': 'Bruce', 'age': 25},
+    {'name': 'Logan', 'age': 30},
+    {'name': 'Xavier', 'age': 22}
 ]
 
 # Endpoint to return JSON data
