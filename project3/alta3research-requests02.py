@@ -30,7 +30,7 @@ def normalize_json(json_data):
     return normalized_data
 
 if __name__ == '__main__':
-    # Replace 'http://localhost:5000' with the URL of your Flask API if it's hosted on a different server.
+    # Replace 'http://localhost:5000' with the URL of your Flask API if it's hosted on a different server, we are using local host for dem purposes.
     api_url = 'http://localhost:5000/json-data'
     
     response = requests.get(api_url)
